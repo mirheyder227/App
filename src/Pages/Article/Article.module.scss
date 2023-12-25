@@ -1,0 +1,137 @@
+@import "../../assets/style/helper.scss";
+@import "../../assets/style/mixin.scss";
+@import "../../assets/style/reset.scss";
+@import "../../assets/style/font.scss";
+@import "../../assets/style/variable.scss";
+.ArticleContainer {
+  @include d-flex(center, center, 30px, column);
+
+  .ArticleHeader {
+    @include d-flex(center, center, 16px, column);
+    padding: 84px 0;
+    .Link {
+      @include d-flex(center, center, 15px);
+      a {
+        color: $text-color;
+        text-align: center;
+
+        font-family: Encode Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+      }
+    }
+    h5 {
+      color: $primary-color;
+      text-align: center;
+
+      font-family: Encode Sans;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 26px;
+      letter-spacing: 0.1px;
+    }
+    h2 {
+      color: $text-color;
+      text-align: center;
+
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 52px;
+      letter-spacing: 0.2px;
+    }
+    p {
+      color: $second-textColor;
+      text-align: center;
+
+      font-family: Encode Sans;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 26px;
+      letter-spacing: 0.1px;
+    }
+  }
+
+  .Circle {
+    background-color: $light-gray-2;
+    @include d-flex(center, center, 30px, row);
+    padding: 80px 0;
+
+    .text {
+      h5 {
+        color: $text-color;
+
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0.1px;
+      }
+      p {
+        color: $second-textColor;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.2px;
+      }
+    }
+  }
+  .faq {
+    padding: 80px 0;
+    @include d-flex(center, center, 16px, column);
+    img {
+      width: 711px;
+      height: auto;
+    }
+    .faqSection {
+      width: 80%;
+
+      h2 {
+        color: #000;
+
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0.1px;
+      }
+    }
+  }
+  .Featured {
+    padding: 80px 0;
+    .featuredText {
+      h2 {
+        color: $text-color;
+        text-align: center;
+
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 52px;
+        letter-spacing: 0.2px;
+      }
+    }
+    .gym {
+      @include d-flex(center, center, 30px, column);
+    }
+  }
+  .Get {
+    padding: 60px 0 52px 0;
+  }
+  @media screen and (min-width: $desktop) {
+    @include d-flex(center, center, 30px, column);
+
+    .Featured {
+      .gym {
+        @include d-flex(center, center, 60px, row);
+      }
+    }
+  }
+}

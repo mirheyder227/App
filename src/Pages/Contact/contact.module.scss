@@ -1,0 +1,150 @@
+@import "../../assets/style/helper.scss";
+@import "../../assets/style/mixin.scss";
+@import "../../assets/style/reset.scss";
+@import "../../assets/style/font.scss";
+@import "../../assets/style/variable.scss";
+.ContactContainer {
+  .ContactHero {
+    padding: 112px 0;
+    text-align: center;
+    @include d-flex(center, center, 40px, column);
+
+   .Title{
+    padding-top: 30px;
+    @include d-flex(center, center, 40px, column);
+    h5 {
+      color: $text-color;
+      font-family: Encode Sans;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 26px; /* 152.941% */
+      letter-spacing: 0.1px;
+    }
+    h1 {
+      text-align: center;
+      color: $text-color;
+
+      /* h2 */
+      font-family: Encode Sans;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 52px; /* 130% */
+      letter-spacing: 0.2px;
+    }
+    h4 {
+      color: $second-textColor;
+      text-align: center;
+
+      /* h4 */
+      font-family: Encode Sans;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 30px; /* 150% */
+      letter-spacing: 0.2px;
+    }
+    h3 {
+      color: $text-color;
+      text-align: center;
+
+      /* h3 */
+      font-family: Encode Sans;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 36px; /* 138.462% */
+      letter-spacing: 0.1px;
+    }
+
+    .img {
+      @include d-flex(center, center, 34px, row);
+    }
+   }
+  }
+  .CardContent {
+    @include d-flex(center, center, 60px, column);
+
+    .cardHeader {
+      h6 {
+        color: $text-color;
+        text-align: center;
+
+        /* h6 */
+        font-family: Encode Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px; /* 142.857% */
+        letter-spacing: 0.2px;
+      }
+      h2 {
+        color: $text-color;
+        text-align: center;
+
+        /* h2 */
+        font-family: Encode Sans;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 52px; /* 130% */
+        letter-spacing: 0.2px;
+      }
+    }
+    .Card {
+      @include d-flex(center, center, 30px, column);
+    }
+    .Talk {
+      padding: 46px 0 70px 0;
+      @include d-flex(center, center, 30px, column);
+
+      h6 {
+        color: $text-color;
+        text-align: center;
+
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 0.1px;
+      }
+      h2 {
+        color: $text-color;
+        text-align: center;
+
+        /* h1 */
+        font-family: Encode Sans;
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 80px; /* 114.286% */
+        letter-spacing: 0.2px;
+      }
+      button {
+        color: $white;
+        padding: 15px 40px;
+        text-align: center;
+        border-radius: 5px;
+        background: $primary-color;
+        border: 1px solid $primary-color;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0.2px;
+      }
+    }
+  }
+  @media screen and (min-width: $desktop){
+    .ContactHero{
+      @include d-grid(1fr 1fr);
+    }
+    .CardContent{
+.Card{
+  @include d-grid(1fr 1fr 1fr, )
+}
+    }
+
+  }
+}

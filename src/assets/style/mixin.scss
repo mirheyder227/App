@@ -1,0 +1,16 @@
+@mixin d-flex ($justifay:null, $align:null, $gap:null,$direction:null,$grow:null){
+    display: flex;
+    justify-content: $justifay;
+    align-items: $align;
+    gap: $gap;
+    flex-direction:$direction ;
+    flex-grow: $grow;
+}
+
+@mixin d-grid ($gtc:null,$gg:null){
+display:grid;
+grid-template-columns:$gtc ;
+grid-gap:$gg
+
+}
+ 

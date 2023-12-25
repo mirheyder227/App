@@ -1,0 +1,123 @@
+@import "../../assets/style/helper.scss";
+@import "../../assets/style/mixin.scss";
+@import "../../assets/style/reset.scss";
+@import "../../assets/style/font.scss";
+@import "../../assets/style/variable.scss";
+
+.productListContainer {
+  width: 80%;
+  @include d-flex(center, flex-start, 25px, column);
+
+  .FilterContainer {
+    hr {
+      border: 1px solid #e7e7e7;
+      width: 186px;
+      height: 1px;
+    }
+
+    .cardContainer {
+      @include d-flex(center, center, 16px, column);
+
+      .card {
+        padding: 25px 0;
+        @include d-flex(center, flex-start, 16px, column);
+
+        h5, a {
+          color: $text-color;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 0.2px;
+        }
+
+        .checkbox {
+          @include d-flex(center, center);
+        }
+      }
+    }
+  }
+
+  .Carusel {
+    @include d-flex(center, center, 25px, row);
+  }
+
+  .Container {
+    margin: 0 auto;
+    @include d-grid(1fr);
+    .ShContainer{
+      padding: 25px 0;
+    @include d-flex(flex-start, center, 25px, column);
+
+      .shoesCard {
+        @include d-grid(1fr 1fr);
+      }
+      .Pagination {
+        @include d-flex(center, center);
+ 
+        margin: 0 auto;
+      }
+    }
+    
+
+     
+    
+  }
+
+ 
+
+  @media screen and (min-width: $desktop) {
+    .FilterContainer {
+      hr {
+        border: 1px solid #e7e7e7;
+        width: 186px;
+        height: 1px;
+      }
+  
+      .cardContainer {
+        @include d-flex(center, center, 16px, column);
+  
+        .card {
+          padding: 25px 0;
+          @include d-flex(center, flex-start, 16px, column);
+  
+          h5, a {
+            color: $text-color;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+          }
+  
+          .checkbox {
+            @include d-flex(center, center);
+          }
+        }
+      }
+    }
+  
+    .Carusel {
+      @include d-flex(center, center, 25px, row);
+    }
+  
+    .Container {
+      margin: 0 auto;
+      @include d-grid(1fr 1fr);
+      .ShContainer{
+      @include d-flex(flex-start, center, 25px, column);
+  
+        .shoesCard {
+          @include d-grid(1fr 1fr);
+        }
+        .Pagination {
+          @include d-flex(center, center);
+   
+          margin: 0 auto;
+        }
+      }
+      
+  
+       
+      
+    }
+  }
+}

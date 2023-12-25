@@ -1,0 +1,75 @@
+@import "../../assets/style/mixin.scss";
+@import "../../assets/style/reset.scss";
+@import "../../assets/style/font.scss";
+@import "../../assets/style/variable.scss";
+.Container{
+   display: none;
+  @media screen and (min-width: $desktop) {
+    @include d-flex(center,center,30px,row);
+    background-color:$primary-color;
+    color:$white;
+    padding: 9px 0;
+    margin: 0 0 15px 0;
+    .Contact{
+        
+        @include d-flex(center,center,10px,row);
+
+
+        .telephone{
+    @include d-flex(center,center,5px,row);
+            h6{
+ cursor: pointer;
+ font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; 
+letter-spacing: 0.2px;
+            }
+        }
+        .Mail{
+    @include d-flex(center,center,5px,row);
+    h6{
+        cursor: pointer;
+ 
+        font-size: 12px;
+       font-style: normal;
+       font-weight: 400;
+       line-height: 16px; 
+       letter-spacing: 0.2px;
+                   }
+        }
+    }
+    .Text{
+        h6{
+            cursor: pointer;
+ 
+ font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;  
+letter-spacing: 0.2px;
+        }
+    }
+    .Media{
+    @include d-flex(center,center,10px,row);
+
+   .Follow{
+    h6{
+ cursor: pointer;
+
+        font-size: 14px;
+       font-style: normal;
+       font-weight: 700;
+       line-height: 24px; 
+       letter-spacing: 0.2px;
+               }
+   }
+        .Img{
+ cursor: pointer;
+
+    @include d-flex(center,center,7px,row);
+
+        }
+    }
+}
+}

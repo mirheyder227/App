@@ -1,0 +1,30 @@
+@import "../../../../assets/style/mixin.scss";
+@import "../../../../assets/style/reset.scss";
+@import "../../../../assets/style/font.scss";
+@import "../../../../assets/style/variable.scss";
+
+.Card{
+    h1{
+        color:$text-color;
+text-align: center;
+
+   
+font-size: 70px;
+font-style: normal;
+font-weight: 900;
+line-height: 80px; 
+letter-spacing: 0.2px;
+    }
+    h5{
+        color: $second-textColor;
+text-align: center;
+
+/* h5 */
+ 
+font-size: 17px;
+font-style: normal;
+font-weight: 700;
+line-height: 26px; /* 152.941% */
+letter-spacing: 0.1px;
+    }
+}

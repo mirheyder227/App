@@ -1,0 +1,327 @@
+@import "../../assets/style/helper.scss";
+@import "../../assets/style/mixin.scss";
+@import "../../assets/style/reset.scss";
+@import "../../assets/style/font.scss";
+@import "../../assets/style/variable.scss";
+
+.HomePage {
+  .cardContainer {
+    @include d-flex(center, center, 30px, column);
+
+    .productHeader {
+      width: 80%;
+      @include d-flex(center, center, 10px, column);
+      text-align: center;
+      .Featured {
+        color: $second-textColor;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+      }
+      .Prob {
+        color: $text-color;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 52px;
+        letter-spacing: 0.2px;
+      }
+      .Text {
+        color: $second-textColor;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.2px;
+      }
+    }
+    .cardContent {
+      width: 80%;
+      @include d-flex(center, center, 30px, column);
+    }
+  }
+  .container {
+    @include d-flex(center, center, 156px, column);
+
+    .shoesCard {
+    @include d-grid(1fr,30px);
+      
+    
+      width: 80%;
+      
+    }
+    .vidTxt {
+      padding-top: 100px;
+      @include d-flex(center, center, 120px, column);
+      .videoAndText {
+        order: 2;
+      }
+      .bag {
+        order: 1;
+
+        @include d-flex(center, center, 20px, column);
+        a {
+          color: $second-textColor;
+
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 0.2px;
+        }
+        h2 {
+          color: $text-color;
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 52px;
+          letter-spacing: 0.2px;
+        }
+        p {
+          color: $second-textColor;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 22px;
+          letter-spacing: 0.2px;
+        }
+        button {
+          padding: 15px 25px;
+          border-radius: 5px;
+          background: $dark-background-color;
+          color: $white;
+          @include d-flex(center, center, 15px);
+        }
+        hr {
+          width: 94px;
+          height: 7px;
+          background: red;
+        }
+      }
+    }
+  }
+
+  .ProductContainer {
+    padding-top: 80px;
+    @include d-flex(center, center, $direction: column);
+
+    .productCard {
+      @include d-flex(center, center, $direction: column);
+      width: 80%;
+
+      .productHeader {
+    width:80%;
+
+        @include d-flex(center, flex-start,24px , column);
+
+        .Featured {
+          color: $success-text-color;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 30px;
+          letter-spacing: 0.2px;
+        }
+        .Prob {
+          color: $text-color;
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 52px;
+          letter-spacing: 0.2px;
+        }
+        .Text {
+          color: $second-textColor;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 22px;
+          letter-spacing: 0.2px;
+        }
+        .Links {
+          a {
+            color: $text-color;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+          }
+        }
+      }
+    }
+  }
+
+  .FeaturedContainer {
+    padding: 120px 0;
+    @include d-flex(center, center,$direction:column);
+
+    .FeaturedHeader {
+      @include d-flex(center, center,60px,column);
+
+      .context{
+        .Featured {
+          color: $text-color;
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 52px;
+          letter-spacing: 0.2px;
+        }
+        .Text {
+          color: $second-textColor;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 22px;
+          letter-spacing: 0.2px;
+        }
+      }
+      .box{
+      @include d-flex(center, center,$direction:column);
+
+      }
+    
+    }
+    .productContent {
+      @include d-grid(1fr );
+
+    }
+  }
+
+  .gymContainer {
+    margin: 0 auto;
+    @include d-flex(center, center, $direction:column);
+
+.gymBox{
+  width:80%;
+  @include d-grid(1fr,30px);
+  row-gap:30px;
+
+}  }
+
+   @media screen and (min-width: $desktop) {
+    .cardContainer {
+      padding: 75px 0 100px 0;
+      @include d-flex(center, center, $direction: column);
+
+      .cardContent {
+        @include d-flex(center, center, $direction: row);
+      }
+    }
+    .container {
+      .shoesCard {
+        @include d-grid(1fr 1fr 1fr ,30px);
+
+        .bag {
+          hr {
+            color: $danger-color;
+            width: 94px;
+            height: 7px;
+          }
+        }
+      }
+      .vidTxt {
+        .videoAndText {
+          order: initial;
+        }
+
+        padding-top: 100px;
+        @include d-flex(center, center, 120px, row);
+        .bag {
+          order: initial;
+
+          @include d-flex($gap: 20px, $direction: column);
+          a {
+            color: $second-textColor;
+
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+          }
+          h2 {
+            color: $text-color;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 52px;
+            letter-spacing: 0.2px;
+          }
+          p {
+            color: $second-textColor;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0.2px;
+          }
+          button {
+            padding: 15px 25px;
+            border-radius: 5px;
+            background: $dark-background-color;
+            color: $white;
+            @include d-flex(center, center, 15px);
+          }
+          hr {
+            width: 94px;
+            height: 7px;
+            background: red;
+          }
+        }
+      }
+    }
+    .imgcontent {
+      @include d-grid(1fr 1fr 1fr 1fr,30px);
+
+    }
+    .ProductContainer {
+      @include d-flex(center, flex-start, );
+
+      .productCard {
+        @include d-flex(center, center, $direction: row);
+        .prdCard {
+          @include d-flex(center, center, $direction: row);
+        }
+        .productHeader{
+          width: 25%;
+        }
+      }
+    
+    }
+
+
+    .FeaturedContainer {
+      width: 80%;
+      padding: 120px 0;
+      @include d-flex(center, center);
+  
+      .FeaturedHeader {
+        width:80%;
+        @include d-grid(1fr 1fr,60px);
+        
+      
+        .box {
+          @include d-flex(center,center,60px,column);
+          .productContent {
+            @include d-grid(1fr 1fr,30px);
+      
+          }
+        }
+      }
+     
+    }
+
+    .gymContainer {
+  width:100%;
+
+.gymBox{
+  @include d-grid(1fr 1fr 1fr 1fr,30px);
+  width:80%;
+}
+    }
+  }
+}

@@ -1,0 +1,167 @@
+@import "../../assets/style/helper.scss";
+@import "../../assets/style/mixin.scss";
+@import "../../assets/style/reset.scss";
+@import "../../assets/style/font.scss";
+@import "../../assets/style/variable.scss";
+
+.ProductContainer {
+   margin: 0 auto;
+     .Link{
+    @include d-flex(flex-start,center,10px,row);
+
+      a{
+        color:$text-color;
+        text-align: center;
+        
+        /* link */
+        font-family: Encode Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+        letter-spacing: 0.2px;
+      }
+    }
+  
+  .cardContainer {
+   
+    padding: 25px 0 48px 0;
+
+    @include d-flex(center,center,30px,column);
+    .Card {
+      width: 80%;
+      padding: 25px 0;
+    @include d-flex(center,center,30px,column);
+
+      .cardTitle {
+        h5 {
+          color: $text-color;
+
+          font-family: Encode Sans;
+          font-size: 26px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 36px;
+          letter-spacing: 0.1px;
+        }
+      }
+      .cardText {
+    @include d-flex(center,center,30px,column);
+
+        color: $second-textColor;
+
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.2px;
+      }
+    }
+  }
+  .Nav {
+    padding: 10px 0 9px 0;
+    @include d-flex(center, center, 70px, row);
+
+    a {
+      color: $second-textColor;
+      text-align: center;
+
+     
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px;  
+      letter-spacing: 0.2px;
+    }
+  }
+
+  .content {
+    h3 {
+      color: $text-color;
+      text-align: center;
+
+      font-family: Encode Sans;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 36px;
+      letter-spacing: 0.1px;
+    }
+
+    hr {
+      width: 331px;
+      height: 1px;
+      background: #ececec;
+    }
+
+    .shoesCard {
+    
+      @include d-flex(center, center, 10px, column);
+      background-color: $light-text-gray-1;
+      padding: 48px 0;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 80%;
+    .cardContainer {
+   
+      padding: 25px 0 48px 0;
+  
+      @include d-flex(center,center,30px,column);
+      .Card {
+        width: 80%;
+        padding: 25px 0;
+      @include d-flex(center,center,30px,column);
+  
+        .cardTitle {
+          h5 {
+            color: $text-color;
+  
+            font-family: Encode Sans;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 36px;
+            letter-spacing: 0.1px;
+          }
+        }
+        .cardText {
+      @include d-flex(center,center,30px,column);
+  
+          color: $second-textColor;
+  
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 22px;
+          letter-spacing: 0.2px;
+        }
+      }
+    }
+    .content {
+      h3 {
+        color: $text-color;
+        text-align: center;
+
+        font-family: Encode Sans;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0.1px;
+      }
+
+      hr {
+        width: 1042px;
+        height: 2px;
+      }
+
+      .shoesCard {
+        @include d-grid(1fr 1fr 1fr 1fr);
+        background-color: $light-text-gray-1;
+      }
+    }
+  }
+}

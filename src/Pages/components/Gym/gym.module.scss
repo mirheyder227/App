@@ -1,0 +1,85 @@
+@import "../../../assets/style/helper.scss";
+@import "../../../assets/style/mixin.scss";
+@import "../../../assets/style/reset.scss";
+@import "../../../assets/style/font.scss";
+@import "../../../assets/style/variable.scss";
+.container {
+  @include d-flex(center, flex-start, $direction: column);
+  width: 80%;
+ 
+ 
+  
+    .Link {
+      @include d-flex(flex-start, center,15px);
+      a {
+        color: $second-textColor;
+ 
+
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; 
+letter-spacing: 0.2px;
+      }
+      a:active {
+        color: disabled-element-color;
+ 
+         
+        
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px; 
+        letter-spacing: 0.2px;
+      }
+    }
+    .gym{
+      width:80%;
+      
+
+     .gymContent{ 
+      padding-top:10px; 
+      @include d-flex(flex-start,$gap:15px,$direction:column);
+
+      h4{
+      color: $text-color;
+
+
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;  
+letter-spacing: 0.1px;
+   }
+   p{
+     @include d-flex(center,center);
+     color: $second-textColor;
+
+
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;  
+letter-spacing: 0.2px;
+   }
+   .dateAndComments{
+     @include d-flex(space-between);
+     p{gap:5px;};
+
+   }
+
+
+   .Learn{
+     @include d-flex($gap:10px);
+     color:$second-textColor;
+
+     font-family: Montserhhrat;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: 24px; 
+     letter-spacing: 0.2px;
+   } }
+    }
+  
+}

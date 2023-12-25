@@ -1,0 +1,108 @@
+// @import "../../assets/style/helper.scss";
+@import "../../assets/style/mixin.scss";
+@import "../../assets/style/reset.scss";
+@import "../../assets/style/font.scss";
+@import "../../assets/style/variable.scss";
+
+.footerContainer {
+  @include d-flex(center, center, $direction: column);
+
+  .containerSecond {
+    @include d-flex(center, flex-start, $direction: column);
+
+    width: 80%;
+  }
+  h6 {
+    color: $text-color;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+  }
+  .footerContent {
+    @include d-grid(1fr,30px);
+   
+
+    .footerCard {
+      @include d-flex(center, flex-start, 10px, $direction: column);
+
+      a {
+        color: $second-textColor;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        cursor: pointer;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+      }
+    }
+  }
+  .footerStart {
+    @include d-flex(space-around, flex-start, 20px, column);
+    padding-bottom: 100px;
+  }
+  .footerImg {
+    @include d-flex(flex-start, center, 20px);
+    cursor: pointer;
+  }
+  form {
+    .footerInput {
+      @include d-flex(center, center);
+      input {
+        width: 321px;
+        height: 58px;
+        background-color: $inputColor;
+        color: $second-textColor;
+        align-items: center;
+        border: 1px solid $inputColor;
+        padding: 15px 0 15px 20px;
+        border-radius: 5px;
+        //  &::placeholder {
+
+        //  }
+      }
+      button {
+        padding: 15px 22.5px;
+        background-color: $primary-color;
+        border: 1px solid $primary-color;
+        border-radius: 5px;
+        width: 117px;
+        height: 58px;
+        color: $white;
+      }
+    }
+  }
+  .footerLastext {
+    width: 100%;
+
+    @include d-flex(center, center);
+    h4 {
+      width: 100%;
+      @include d-flex(center, center);
+      color: $second-textColor;
+      background-color:$footerColor;
+      // background-color: red;
+      padding: 25px 0;
+      font-size: 14px;
+
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    .footerContent {
+    @include d-grid(1fr 1fr 1fr 1fr 1fr);
+
+      padding: 50px 0;
+   
+    }
+    .footerStart {
+      padding: 25px 0;
+      width: 100%;
+      @include d-flex(space-between, flex-start, $direction: row);
+    }
+  }
+}

@@ -1,0 +1,336 @@
+@import "../../assets/style/helper.scss";
+@import "../../assets/style/mixin.scss";
+@import "../../assets/style/reset.scss";
+@import "../../assets/style/font.scss";
+@import "../../assets/style/variable.scss";
+
+.AboutContainer {
+  padding: 112px 0 112px 0;
+  text-align: center;
+  @include d-flex(center, center, $direction: column);
+
+  .AboutHeader {
+    @include d-flex(center, center, 40px, column);
+
+    .Text {
+      @include d-flex(center, center, 40px, column);
+
+      h5 {
+        color: $text-color;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 0.1px;
+      }
+
+      h1 {
+        color: $text-color;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 52px;
+        letter-spacing: 0.2px;
+      }
+
+      h4 {
+        color: $second-textColor;
+        text-align: center;
+        font-family: Encode Sans;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+      }
+
+      button {
+        padding: 15px 40px;
+        color: $white;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid $primary-color;
+        background-color: $primary-color;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0.2px;
+      }
+    }
+  }
+
+  .aboutProblems {
+    @include d-flex(center, center, 60px, column);
+
+    .Title {
+      @include d-flex(center, center, 24px, column);
+
+      p {
+        color: $danger-color;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.2px;
+      }
+
+      h2 {
+        color: $text-color;
+        text-align: center;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px;
+        letter-spacing: 0.1px;
+      }
+    }
+
+    .paragraph {
+      color: $second-textColor;
+      font-family: Encode Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.2px;
+    }
+  }
+
+  .cardContent {
+    @include d-flex(center, center, 100px, column);
+    padding: 100px 0;
+  }
+
+  .meet {
+    width: 80%;
+    padding: 30px 0;
+    @include d-grid(1fr);
+
+    .meetTitle {
+      padding: 45px 0;
+      @include d-flex(center, center, 10px, column);
+
+      h2 {
+        color: $text-color;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: 0.2px;
+      }
+
+      p {
+        color: $second-textColor;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+      }
+    }
+
+    .meetTeam {
+      @include d-grid(1fr, 30px);
+    }
+  }
+
+  .advertising {
+    @include d-flex(center, center, 30px, column);
+
+    .AdText {
+      @include d-flex(center, center, 30px, column);
+
+      h2 {
+        color: $text-color;
+        text-align: center;
+        font-family: Encode Sans;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 52px;
+        letter-spacing: 0.2px;
+      }
+
+      p {
+        color: $second-textColor;
+        text-align: center;
+        font-family: Encode Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.2px;
+      }
+    }
+  }
+
+  .workContent {
+    width: 80%;
+    margin: 60px 0;
+    padding: 90px 0 96px 0;
+    @include d-flex(center, center, 24px, column);
+
+    .work {
+      background-color: $hover-color;
+      padding: 90px 0 96px 0;
+
+      @include d-flex(center, center, 24px, column);
+
+      h5 {
+        color: $white;
+        font-family: Encode Sans;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: 0.1px;
+      }
+
+      h2 {
+        color: $white;
+        text-align: center;
+        font-family: Encode Sans;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 52px;
+        letter-spacing: 0.2px;
+      }
+
+      p {
+        color: $white;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+      }
+
+      button {
+        @include d-flex(center, center, 10px, column);
+        background-color: $hover-color;
+        border-radius: 5px;
+        border: 1px solid $light-gray-2;
+        color: $white;
+        padding: 15px 40px;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0.2px;
+      }
+    }
+  }
+
+  // ! Desktop
+  @media screen and (min-width:$desktop) {
+    //   .AboutContainer {
+    //       padding: 112px 0 112px 0;
+    //       text-align: center;
+    // @include d-flex(center, center, $direction: column);
+
+    .AboutHeader {
+      padding: 13px 0 112px 0;
+      @include d-grid(1fr 1fr, 30px);
+      width: 80%;
+
+      .Text {
+        @include d-flex(center, center, 40px, column);
+
+        h5 {
+          color: $text-color;
+          font-size: 17px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 26px;
+          letter-spacing: 0.1px;
+        }
+
+        h1 {
+          color: $text-color;
+          font-size: 70px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: 80px;
+          letter-spacing: 0.2px;
+        }
+
+        h4 {
+          color: $second-textColor;
+          text-align: center;
+          font-family: Encode Sans;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 30px;
+          letter-spacing: 0.2px;
+        }
+
+        button {
+          padding: 15px 40px;
+          color: $white;
+          text-align: center;
+          border-radius: 5px;
+          border: 1px solid $primary-color;
+          background-color: $primary-color;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 22px;
+          letter-spacing: 0.2px;
+        }
+      }
+    }
+    .aboutProblems {
+      width: 80%;
+      @include d-grid(1fr 1fr, 60px);
+    }
+    .cardContent {
+      @include d-grid(1fr 1fr 1fr 1fr, 30px);
+      width: 80%;
+    }
+
+    
+    .imgVideo {
+      width: 100%;
+      @include d-flex(center, center);
+      img {
+        width: 989px;
+        height: 540px;
+        flex-shrink: 0;
+      }
+    }
+    .meet {
+      grid-gap: 112px;
+      padding: 112px 0;
+      width: 80%;
+      .meetTeam {
+        @include d-grid(1fr 1fr 1fr, 30px);
+      }
+    }
+    .workContent {
+      @include d-grid(1fr 1fr,0px);
+.work{
+  width:1000px;
+  height:627px;
+}
+      .imgs{
+        width:100%;
+        img{
+          width: 590px;
+height: 627px;
+        }
+      }
+    }
+  }
+}
+// }

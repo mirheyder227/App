@@ -1,0 +1,97 @@
+@import "../../../../assets/style/mixin.scss";
+@import "../../../../assets/style/reset.scss";
+@import "../../../../assets/style/font.scss";
+@import "../../../../assets/style/variable.scss";
+
+.formContainer {
+    @include d-flex(center,center,30px,column);
+
+    background-color: $light-text-gray-1;
+    margin:80px 0 80px 0;
+    padding: 60px 0 41px 0;
+  .formContent {
+width: 80%;
+    @include d-flex(center,center,30px,column);
+   
+   
+
+    h3 {
+      width: 95%;
+        color: $text-color;
+        text-align: center;
+        font-family: Encode Sans;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 52px;
+        letter-spacing: 0.2px;
+      }
+      .sbs{
+    @include d-flex(center,center,30px,column);
+
+        .btn{
+          padding-bottom:   14px;
+          input{border-radius: 5px;
+            border: 1px solid #E6E6E6;
+            background: $white;
+            width:311px;
+            height:58px;
+            padding:15px 0 15px 20px;
+          }
+          button{
+      
+    @include d-flex(center,center,$direction:column);
+ 
+width: 311px;
+height: 58px;
+padding: 15px 0px;
+ 
+ 
+ border:1px solid $primary-color;
+ 
+color:$white;
+background-color:$primary-color;          }
+        }
+      }
+   
+  }
+  @media screen and (min-width: $desktop) {
+     .formContent {
+      @include d-grid(1fr 1fr);
+ 
+   
+   
+
+  
+      .sbs{
+        p{
+ color:$second-textColor;
+ font-family: Encode Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 137.5% */
+letter-spacing: 0.2px;
+        }
+        .btn{
+          @include d-flex(center,center);
+          padding-bottom:   14px;
+          input{border-radius: 5px;
+            border: 1px solid #E6E6E6;
+            background: $white;
+            width:311px;
+            height:58px;
+            padding:15px 0 15px 20px;
+          }
+          button{
+      
+ 
+padding: 15px 22.5px;
+ border:1px solid $primary-color;
+          }
+        }
+      }
+   
+  }
+  }
+}

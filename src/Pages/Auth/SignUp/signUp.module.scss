@@ -1,0 +1,178 @@
+@import "../../../assets/style/helper.scss";
+@import "../../../assets/style/mixin.scss";
+@import "../../../assets/style/reset.scss";
+@import "../../../assets/style/font.scss";
+@import "../../../assets/style/variable.scss";
+.signUpContent {
+  padding: 80px 0 80px 0;
+  @include d-flex(center, center, 25px, column);
+
+  .signHeader {
+    @include d-flex(center, center, 15px, column);
+
+    h2 {
+      color: $text-color;
+      text-align: center;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 50px;
+      letter-spacing: 0.2px;
+    }
+    h5 {
+      color: $second-textColor;
+      text-align: center;
+
+      /* h5 */
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;  
+      letter-spacing: 0.1px;
+    }
+  }
+  form {
+    padding: 40px 0;
+    @include d-flex(center, center, 25px, column);
+    .btn1 {
+      cursor:pointer;
+
+      margin: auto;
+      border: 1px solid $primary-color;
+      @include d-flex(center, center, 25px);
+      background-color: $primary-color;
+      padding: 15px 25px;
+      width: 270px;
+      height: 54px;
+      border-radius: 5px;
+      align-self: stretch;
+      color: $white;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 0.2px;
+    }
+
+    label {
+      color: $text-color;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+    }
+    input {
+      @include d-flex(center, center);
+
+      width: 267px;
+      height: 50px;
+      padding: 11px 94px 11px 21px;
+      flex-shrink: 0;
+    }
+    .Or {
+      span {
+        height: 1px;
+        background-color: $light-gray-2;
+        width: 40%;
+      }
+    }
+    .btn2 {
+      cursor:pointer;
+      margin: auto;
+
+      width: 270px;
+      height: 52px;
+
+      @include d-flex(center, center, 25px, column);
+      padding: 15px 40px;
+      align-self: stretch;
+      color: $white;
+      text-align: center;
+      background-color: $success-text-color;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 0.2px;
+      border: 1px solid $success-text-color;
+      border-radius: 5px;
+    }
+    h3 {
+      width:39%;
+      color: $second-textColor;
+
+      font-family: Montserrat;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0.2px;
+    }
+    .text {
+      @include d-flex(center, center, 10px);
+      h4 {
+        color: $text-color;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.1px;
+      }
+      a {
+        color: $primary-color;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+      }
+    }
+  }
+  @media screen and (min-width: 800px) {
+   
+    
+      @include d-flex(center, center, 25px, column);
+      .signHeader {
+      @include d-flex(center, center, 15px, column);
+
+      }
+      .container {
+        width: 80%;
+        form {
+          padding:80px 0;
+          .btn1 {
+            width: 434px;
+            height: 54px;
+          }
+          .Name {
+            input {
+              width: 430px;
+              height: 50px;
+            }
+          }
+          .Email {
+            input {
+              width: 430px;
+              height: 50px;
+            }
+          }
+          .Password{
+            input {
+              width: 430px;
+              height: 50px;
+            }
+          }
+          .btn2 {
+            width: 434px;
+            height: 52px;
+          }
+        }
+      }
+    
+  }
+}

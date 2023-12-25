@@ -1,0 +1,59 @@
+@import "../../../assets/style/helper.scss";
+@import "../../../assets/style/mixin.scss";
+@import "../../../assets/style/reset.scss";
+@import "../../../assets/style/font.scss";
+@import "../../../assets/style/variable.scss";
+
+.container {
+  @include d-flex(center, center, $direction: column);
+  padding: 50px 0;
+
+  
+  .imgContent {
+    width: 80%;
+    @include d-flex(center, center, 60px, column);
+    // img {
+    //   width: 104px;
+    //   height: 34px;
+    // }
+
+    // img:nth-child(1) {
+    //   width: 104px;
+    //   height: 34px;
+    // }
+
+    // img:nth-child(2) {
+    //   width: 104px;
+    //   height: 34px;
+    // }
+    // img:nth-child(3) {
+    //   width: 104px;
+    //   height: 34px;
+    // }
+    // img:nth-child(4) {
+    //   width: 104px;
+    //   height: 34px;
+    // }
+    // img:nth-child(5) {
+    //   width: 104px;
+    //   height: 34px;
+    // }
+    // img:nth-child(6) {
+    //   width: 104px;
+    //   height: 34px;
+    // }
+  }
+  @media screen and (min-width: 800px) {
+    @include d-flex(center, center, );
+  
+  
+    .imgContent {
+      @include d-flex(center, center, 60px, row);
+        
+      img{
+        object-fit:cover;
+        height:75px;
+      }
+    }
+  }
+}

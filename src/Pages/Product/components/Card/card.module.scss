@@ -1,0 +1,189 @@
+@import "../../../../assets/style/mixin.scss";
+@import "../../../../assets/style/reset.scss";
+@import "../../../../assets/style/font.scss";
+@import "../../../../assets/style/variable.scss";
+
+.cardContainer {
+  padding: 48px 0;
+  width: 80%;
+  margin:0 auto;
+  @include d-flex(center, center, 10px, column);
+  
+  .cardContent {
+    width: 80%;
+
+    @include d-flex(center, flex-start, 50px, column);
+    h3 {
+      color: $text-color;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 52px;
+      letter-spacing: 0.2px;
+    }
+    .raiting {
+      .number {
+        color: $second-textColor;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+      }
+    }
+    .color {
+      @include d-flex(center, center, 10px, row);
+    }
+    .Price {
+      h5 {
+        color: $text-color;
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0.1px;
+      }
+      h6 {
+        color: $second-textColor;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+      }
+      .stock {
+        color: $primary-color;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+      }
+    }
+    p {
+      color: #858585;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.2px;
+    }
+    hr {
+      width: 445px;
+      height: 1px;
+    }
+    .btnWrapper {
+      @include d-flex(center, center, 10px, row);
+      .Image {
+        @include d-flex(center, center, 10px, row);
+      }
+      button {
+        @include d-flex(center, center, 10px, column);
+        padding: 10px 20px;
+        border-radius: 5px;
+        background: $primary-color;
+        a {
+          color: $white;
+          text-align: center;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 20px;
+          letter-spacing: 0.2px;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 48px 0;
+    width: 80%;
+    @include d-grid(1fr 1fr, 30px);
+    .cardContent {
+      width: 80%;
+
+      @include d-flex(center, flex-start, 50px, column);
+      h3 {
+        color: $text-color;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 52px;
+        letter-spacing: 0.2px;
+      }
+      .raiting {
+        .number {
+          color: $second-textColor;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 20px;
+          letter-spacing: 0.2px;
+        }
+      }
+      .color {
+        @include d-flex(center, center, 10px, row);
+      }
+      .Price {
+        h5 {
+          color: $text-color;
+          text-align: center;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 32px;
+          letter-spacing: 0.1px;
+        }
+        h6 {
+          color: $second-textColor;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 20px;
+          letter-spacing: 0.2px;
+        }
+        .stock {
+          color: $primary-color;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 20px;
+          letter-spacing: 0.2px;
+        }
+      }
+      p {
+        color: #858585;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.2px;
+      }
+      hr {
+        width: 445px;
+        height: 1px;
+      }
+      .btnWrapper {
+        @include d-flex(center, center, 10px, row);
+        .Image {
+          @include d-flex(center, center, 10px, row);
+        }
+        button {
+          @include d-flex(center, center, 10px, column);
+          padding: 10px 20px;
+          border-radius: 5px;
+          background: $primary-color;
+          a {
+            color: $white;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+          }
+        }
+      }
+    }
+  }
+}

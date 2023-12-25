@@ -1,0 +1,41 @@
+@import "../../../assets/style/helper.scss";
+@import "../../../assets/style/mixin.scss";
+@import "../../../assets/style/reset.scss";
+@import "../../../assets/style/font.scss";
+@import "../../../assets/style/variable.scss";
+
+.Card{
+    @include d-flex(center,center,10px,column);
+
+
+    h5{
+        color:$text-color;
+
+text-align: center;
+
+ 
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; 
+letter-spacing: 0.1px;
+
+    }
+    h6{ 
+        color: $second-textColor;
+        text-align: center;
+
+ 
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; 
+letter-spacing: 0.2px;
+
+    }
+    .images{
+        @include d-flex(center,center,10px,row)
+    }
+}

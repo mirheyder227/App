@@ -1,0 +1,63 @@
+@import "../../../../assets/style/helper.scss";
+@import "../../../../assets/style/mixin.scss";
+@import "../../../../assets/style/reset.scss";
+@import "../../../../assets/style/font.scss";
+@import "../../../../assets/style/variable.scss";
+
+.card {
+  @include d-flex(center,center,$direction:column);
+  .text{
+  @include d-flex(center,center,10px,column);
+
+    .shoesType {
+      color: $text-color;
+      text-align: center;
+      font-family: Encode Sans;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 26px;
+      letter-spacing: 0.1px;
+    }
+    .Link {
+      text-align: center;
+      font-family: Encode Sans;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      a {
+        color: $second-textColor;
+      }
+    }
+  
+    .price{
+  @include d-flex(center,center,5px);
+
+      .priceOutdated {
+        color: $muted-color;
+        text-align: center;
+        font-family: Encode Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        
+       
+      }
+    .priceNew{
+        color: $secondary-color-1;
+        text-align: center;
+        font-family: Encode Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+      }
+    }
+  }
+
+}

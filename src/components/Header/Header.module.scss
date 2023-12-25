@@ -1,0 +1,263 @@
+ @import "../../assets/style/mixin.scss";
+@import "../../assets/style/reset.scss";
+@import "../../assets/style/font.scss";
+@import "../../assets/style/variable.scss";
+
+
+.HeaderContainer {
+
+  @include d-flex(center,center,$direction:column);
+
+
+  .containerFirst {
+    @include d-flex(center,center,);
+
+ width: 80%;
+  }
+
+  .mobileHeader {
+    @include d-flex(space-between);
+    height: 54.326px;
+    padding: 12.176px 39.34px 12.177px 0px;
+    align-items: center;
+
+    h3 {
+      font-family: Montserrat;
+      font-size: 22.48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 29.973px;
+      letter-spacing: 0.094px;
+    }
+  }
+
+  .mobileImage {
+          cursor:pointer;
+          @include d-flex($gap: 22px);
+    img:nth-child(4) {
+      display: none;
+    }
+  }
+
+  .navBar {
+    display: none;
+
+    li {
+      margin: 0 auto;
+      padding: 15px;
+      border-right: 1px solid #fff; 
+  
+      &:hover {
+        .dropdown {
+          display: block;
+        }
+      }
+    } 
+    .dropdown {
+      display: none;
+      position: absolute;
+      background-color: $primary-color;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      flex-direction: column;
+  a{
+    color: $white;
+  }
+     
+    }
+ 
+
+    ul {
+      @include d-flex(center, center, 28.1px, column);
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul li:nth-child(4),
+    ul li:nth-child(6),
+    ul li:nth-child(5),
+    ul li:nth-child(8) {
+      display: none;
+    }
+
+    a {
+      font-family: Encode Sans;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+          cursor:pointer;
+          line-height: 45px;
+      letter-spacing: 0.2px;
+      text-decoration: none;
+      color: $second-textColor;
+      cursor: pointer;
+      &:hover {
+        color: $primary-color; 
+      }
+    }
+    .login{
+      width: 100%;
+      @include d-flex(center, center,5px);
+    
+      order: 5;
+      img{
+        width: 27px;
+        height: 28px;
+      }
+      h6 a {
+        color: $primary-color;
+      
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px; 
+    letter-spacing: 0.2px;
+      }
+      p {
+        color: $primary-color;
+      }
+     }
+     .Btn{
+      width: 75px;
+      height: 35px;
+      @include d-flex(center, center, 10px, column);
+      color: $white;
+          text-align: center;
+          padding: 15px 40px;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 22px;
+          letter-spacing: 0.2px;
+          border-radius: 5px;
+          background: $primary-color;
+          border: 1px solid $primary-color;
+     
+     
+      a{
+        font-size: 12px;
+          font-style: normal;
+     
+              cursor:pointer;
+              line-height: 45px;
+          letter-spacing: 0.2px;
+          text-decoration: none;
+          color: $white;
+
+      }
+     }
+  }
+  .navBarActive{
+    @include d-flex(center, center,28.1px,column );
+
+  }
+
+  
+
+
+  @media screen and (min-width: $desktop) {
+    @include d-flex(space-around, center);
+    .containerFirst {
+      @include d-flex(space-between);
+  
+   width: 80%;
+    }
+    .mobileHeader {
+      h3 {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0.1px;
+      }
+    }
+    .mobileImage {
+      cursor:pointer;
+      img:nth-child(3) {
+        display: none;
+      }
+      img:nth-child(4) {
+        display: block;
+      }
+    }
+    .navBar {
+      @include d-flex(center, center,15px);
+
+      .login {
+        width: initial;
+        @include d-flex(center, center);
+   order: 0;
+   img{
+    width: 12px;
+    height: 12px;
+   }
+        h6 a {
+          color: $primary-color;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 24px;
+          letter-spacing: 0.2px;
+        }
+        p {
+          color: $primary-color;
+        }
+      }
+       order:0;
+       width: 37%;
+      @include d-flex(center, center);
+      ul {
+        @include d-flex(center, center, $direction: row);
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      ul li:nth-child(2),
+      ul li:nth-child(3),
+      ul li:nth-child(4) {
+        display: none;
+      }
+      ul li:nth-child(4),
+      ul li:nth-child(6),
+      ul li:nth-child(5),
+      ul li:nth-child(8) {
+        display: block;
+      }
+      a {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+      }
+    }
+    .Btn{
+      width: 75px;
+      height: 35px;
+      @include d-flex(center, center, 10px, column);
+      color: $white;
+          text-align: center;
+          padding: 15px 40px;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 22px;
+          letter-spacing: 0.2px;
+          border-radius: 5px;
+          background: $primary-color;
+          border: 1px solid $primary-color;
+      a{
+        font-size: 12px;
+          font-style: normal;
+              cursor:pointer;
+              line-height: 45px;
+          letter-spacing: 0.2px;
+          text-decoration: none;
+          color: $second-textColor;
+      }
+     }
+   
+  }
+}
