@@ -94,9 +94,7 @@
       height: 1px;
       background: #ececec;
     }
-
     .shoesCard {
-    
       @include d-flex(center, center, 10px, column);
       background-color: $light-text-gray-1;
       padding: 48px 0;
